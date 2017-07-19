@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/activity_formulario"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- nome --> <!-- Atalho para TextInputlayout usa o TIL e enter -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nomeLabel"
+            app:hintEnabled="true"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="230dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/ic_no_image"
+                android:background="#c9d8e7"/>
+
+
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/formulario_nome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="Nome" />
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- telefone -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintEnabled="true">
+
+            <EditText
+                android:id="@+id/formulario_telefone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="Telefone"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <!-- endereco -->
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintEnabled="true">
+
+            <EditText
+                android:id="@+id/formulario_endereco"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="Endereço"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- Site -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintEnabled="true">
+
+            <EditText
+                android:id="@+id/formulario_site"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="Site"/>
+        </android.support.design.widget.TextInputLayout>
+
+
+        <!-- Nota -->
+
+        <RatingBar
+            android:id="@+id/formulario_nota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:numStars="5"/>
+
+
+
+    </LinearLayout>
+</ScrollView>

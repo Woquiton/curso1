@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android6999.cadastro">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/student"
+        android:label="Sistema de Controle de Alunos"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ListaAlunosActivity"
+            android:label="Lista de Alunos">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".FormularioActivity"
+            android:label="Cadastrar Aluno">
+
+        </activity>
+    </application>
+
+</manifest>
